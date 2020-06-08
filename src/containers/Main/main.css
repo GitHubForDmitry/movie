@@ -1,0 +1,203 @@
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.main {
+  padding-top: 50px;
+}
+.main__title {
+  position: relative;
+  margin-bottom: 10px;
+  font-family: "Source Serif Pro", serif;
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: -1.07px;
+  color: #000000;
+}
+.main__title::before {
+  content: "";
+  position: absolute;
+  left: -19px;
+  top: 3px;
+  width: 9px;
+  height: 50px;
+  background-color: #ec1d24;
+}
+.main__text {
+  font-family: "Source Serif Pro", serif;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.71px;
+  color: #000000;
+}
+.main__add-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main__add-text--btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Source Serif Pro", serif;
+  font-size: 17px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.41;
+  letter-spacing: -0.43px;
+  color: #fff;
+  outline: none;
+  border-width: 0;
+  background-color: #ec1d24;
+  border-radius: 5px;
+  padding: 14px 30px;
+  cursor: pointer;
+}
+.main__add-text--icon {
+  margin-left: 14px;
+}
+
+.movie-catalogue {
+  display: grid;
+  grid-template-columns: repeat(3, 305px);
+  grid-column-gap: 22px;
+  grid-row-gap: 1px;
+  padding: 30px 0;
+  justify-content: center;
+}
+.movie-catalogue__block {
+  position: relative;
+  display: flex;
+  margin-bottom: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 15px 50px 0 rgba(0, 0, 0, 0.12);
+}
+.movie-catalogue--link {
+  display: block;
+  position: relative;
+  text-decoration: none;
+}
+.movie-catalogue--wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px 10px 20px;
+}
+.movie-catalogue--img {
+  border-radius: 10px;
+  max-width: 305px;
+  min-height: 180px;
+}
+.movie-catalogue--type-kcl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.movie-catalogue--type-kcl > p {
+  font-family: "Source Serif Pro", serif;
+  font-size: 11px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.39px;
+  color: grey;
+  text-transform: uppercase;
+}
+.movie-catalogue--name {
+  position: relative;
+  height: 86px;
+  font-family: "Source Serif Pro", serif;
+  font-size: 17px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.61px;
+  color: grey;
+  text-align: left;
+}
+.movie-catalogue--name::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 8px;
+  width: 15px;
+  height: 4px;
+  background-color: #ec1d24;
+}
+.movie-catalogue--description {
+  max-width: 270px;
+  height: 54px;
+  margin-bottom: 10px;
+  font-family: "Source Serif Pro", serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.5px;
+  color: grey;
+}
+.movie-catalogue--price-persons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: right;
+}
+.movie-catalogue--price-persons .price {
+  font-family: "Source Serif Pro", serif;
+  font-size: 17px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.61px;
+  color: grey;
+}
+.movie-catalogue--price-persons .price .currency {
+  font-family: "Source Serif Pro", serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.5px;
+  color: grey;
+}
+.movie-catalogue--price-persons .persons {
+  font-family: "Source Serif Pro", serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.57;
+  letter-spacing: -0.5px;
+  text-align: right;
+  color: grey;
+}
+
+@media screen and (max-width: 961px) {
+  .dish-catalogue {
+    grid-template-columns: repeat(2, 305px);
+  }
+}
+@media screen and (max-width: 669px) {
+  .dish-catalogue {
+    grid-template-columns: repeat(1, 305px);
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,49 @@
+@import "../../globalStyles/normalize.css";
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.layout__header {
+  background-color: #202020;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 50px;
+  background-color: #202020;
+}
+.header__result-search.hidden {
+  opacity: 0;
+  max-height: 0;
+}
+
+.wrapper-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper-input__header--label {
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+}
+.wrapper-input__header--image {
+  width: 20px;
+  height: 20px;
+}
+.wrapper-input__header--link {
+  text-decoration: none;
+  display: block;
+}
+.wrapper-input__header--input {
+  outline: none;
+  border-width: 0;
+}
+
+/*# sourceMappingURL=header.css.map */

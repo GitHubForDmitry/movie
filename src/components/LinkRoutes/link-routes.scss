@@ -1,0 +1,16 @@
+@import "../../globalStyles/globalStyle";
+.nav {
+  list-style-type: none;
+  @include centerFlex;
+  &__item {
+    margin-right: 16px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__link {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+

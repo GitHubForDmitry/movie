@@ -1,0 +1,51 @@
+@import "../../globalStyles/globalStyle";
+@import "../../globalStyles/layout";
+@import "../../globalStyles/normalize.css";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  min-height: 50px;
+  background-color: $headerBgColor;
+
+  &__result-search {
+    &.hidden {
+      opacity: 0;
+      max-height: 0;
+    }
+  }
+
+}
+
+.wrapper-input {
+  @include centerFlex;
+
+  &__header {
+    &--label {
+      background-color: #fff;
+      border-radius: 5px;
+      @include centerFlex;
+      padding: 5px;
+    }
+
+    &--image {
+      width: 20px;
+      height: 20px;
+    }
+
+    &--link {
+      text-decoration: none;
+      display: block;
+    }
+
+    &--input {
+      outline: none;
+      border-width: 0;
+    }
+  }
+
+
+
+}
